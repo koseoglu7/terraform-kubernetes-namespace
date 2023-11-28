@@ -1,13 +1,4 @@
-resource "kubernetes_namespace" "example" {
-  metadata {
-    annotations = {
-      name = "example-annotation"
-    }
-
-    labels = {
-      mylabel = "label-value"
-    }
-
-    name = "terraform-example-namespace"
-  }
+module "namespace" {
+    source = "koseoglu7/namespace/kubernetes"
+    version = "0.0.1"
 }
