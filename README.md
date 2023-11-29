@@ -4,5 +4,6 @@
 ```
 module "namespace" {
     source = "koseoglu7/namespace/kubernetes"
+    name = "test"
 }
 ```
